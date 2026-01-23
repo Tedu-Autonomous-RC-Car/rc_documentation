@@ -89,4 +89,27 @@ nav:
 2. **Lint:** Ensure there are no broken links by running `mkdocs build`.
 3. **PR:** Commit your changes and open a Pull Request!
 
-**Would you like me to create a GitHub Action script that automatically deploys these docs whenever you merge to the main branch?**
+---
+
+## 📚 Writing Resources
+
+To keep our documentation clean and professional, please follow standard Markdown syntax. If you are new to Markdown or need a refresher on advanced formatting, use the following guide:
+
+### Recommended Guide
+
+We recommend using the **[Markdown Guide](https://www.markdownguide.org/basic-syntax/)**. It provides a comprehensive look at:
+
+* **Basic Syntax:** Headers, lists, and code blocks.
+* **Extended Syntax:** Tables, task lists, and footnotes.
+* **Cheat Sheet:** A quick reference for when you're in a flow.
+
+---
+
+## 🎨 MkDocs Specific Formatting
+
+Since we use the **Material for MkDocs** theme, you also have access to some "SuperFences" and special UI elements. You can find the specific documentation for those here:
+
+* **[Material Design Icons](https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/):** How to add icons directly into your text.
+* **[Content Tabs](https://squidfunk.github.io/mkdocs-material/reference/content-tabs/):** Great for showing code examples in multiple languages (e.g., Python vs. JavaScript).
+
+> **Pro-Tip:** If you want to see how a specific page on our site was written, you can usually find the "Edit this page" button (the pencil icon) at the top right of any page to view the raw Markdown source.
