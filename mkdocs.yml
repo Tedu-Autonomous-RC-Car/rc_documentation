@@ -2,6 +2,8 @@ site_name: Autonomous Car Documentation
 site_url: https://tedu-autonomous-rc-car.github.io/rc_documentation/
 theme:
   name: material
+  logo: assets/images/logo.png
+  favicon: assets/images/favicon.ico
   features:
     - navigation.tabs
     - navigation.sections
