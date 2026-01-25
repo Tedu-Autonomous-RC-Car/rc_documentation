@@ -25,6 +25,7 @@ extra:
 
 plugins:
   - search
+  - social
   - multirepo:
       # This helps prevent the 'Loop closed' error on some systems
       cleanup: true 

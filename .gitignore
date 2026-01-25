@@ -1,0 +1,29 @@
+# --- MkDocs Specific ---
+# Build output (automatically generated HTML)
+site/
+
+# Local cache for plugins (Social Cards, Privacy, etc.)
+.cache/
+
+# --- Python Specific ---
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# --- System Specific ---
+# macOS system files
+.DS_Store
+
+# Windows thumbnail cache files
+Thumbs.db
