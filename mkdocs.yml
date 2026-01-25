@@ -1,33 +1,43 @@
-name: Deploy Documentation
-on:
-  push:
-    branches:
-      - main
+site_name: Autonomous Car Documentation
+site_url: https://hajorda.github.io/rc_documentation/
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - content.code.copy
+    - content.code.annotate  # Allows you to add (+) icons to code lines for explanation
+    - announce.dismiss
+    - content.code.copy
+    - navigation.tabs
+# The Social Card Setup
+  cards: true
+  cards_directory: overrides/cards
 
-permissions:
-  contents: write
+plugins:
+  - search
+  - multirepo:
+      # This helps prevent the 'Loop closed' error on some systems
+      cleanup: true 
+      repos:
+        - section: Controller
+          import_url: 'https://github.com/Tedu-Autonomous-RC-Car/teleopt_controller?branch=main'
+        # - section: Vision
+        #   import_url: 'https://github.com/Tedu-Autonomous-RC-Car/vision?branch=main'
+        - section: Jetson
+          import_url: 'https://github.com/Tedu-Autonomous-RC-Car/jetson?branch=main'
 
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Code
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12' 
-
-      - name: Install Dependencies
-        run: |
-          pip install -r requirements.txt
-
-      - name: Build and Deploy
-        env:
-          # Ensure this secret matches the name you gave it in GitHub Settings
-          GithubAccessToken: ${{ secrets.GH_TOKEN_MULTIREPO }}
-        run: |
-          mkdocs gh-deploy --force
+markdown_extensions:
+  - admonition                # For !!! note, !!! warning blocks
+  - pymdownx.details          # For collapsible sections (great for FAQs)
+  - pymdownx.superfences:     # For Mermaid diagrams
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:          # To switch between ROS2 Humble/Foxy or Python/C++
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
