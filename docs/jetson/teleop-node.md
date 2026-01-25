@@ -1,8 +1,8 @@
-# Teleop Listener Node
+# Teleoperation Listener Node
 
 ## Overview
 
-The `teleopt_listener_node` runs on the Jetson Orin Nano and receives teleoperation commands from the host computer. This guide covers the setup and execution of the node.
+The teleoperation listener node runs on the Jetson Orin Nano and receives remote control commands from the host computer. This enables manual control of the robot during testing and development phases.
 
 ## Prerequisites
 
@@ -12,7 +12,9 @@ Before running the node, ensure the following requirements are met:
 - Both devices are configured to use the same ROS 2 domain ID
 - ROS 2 workspace is properly set up with the teleop listener package
 
-## Building the Workspace
+## Installation and Setup
+
+### 1. Build the Workspace
 
 Navigate to the workspace root directory (one level above `src`):
 
@@ -26,7 +28,7 @@ Build the workspace to ensure all changes are applied:
 colcon build
 ```
 
-## Setting Up the Environment
+### 2. Source the Workspace
 
 Source the workspace setup script based on your shell:
 
@@ -40,13 +42,15 @@ source install/setup.bash
 source install/setup.zsh
 ```
 
-## Running the Node
+### 3. Run the Node
 
-Execute the teleop listener node:
+Execute the teleoperation listener node:
 
 ```bash
 ros2 run teleopt_listener teleopt_listener_node
 ```
+
+The node will start listening for incoming teleoperation commands from the host computer.
 
 ## Network Configuration
 
