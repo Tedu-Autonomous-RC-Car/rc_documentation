@@ -1,5 +1,5 @@
 site_name: Autonomous Car Documentation
-site_url: https://hajorda.github.io/rc_documentation/
+site_url: https://tedu-autonomous-rc-car.github.io/rc_documentation/
 theme:
   name: material
   features:
