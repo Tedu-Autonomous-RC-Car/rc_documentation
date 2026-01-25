@@ -1,34 +1,44 @@
-
 ## 🛠 Contributing to the Documentation
 
-Welcome! We use **MkDocs** with the **Material** theme to build our documentation. Follow these steps to set up your environment and contribute.
+Welcome! We use **MkDocs** with the **Material** theme and the **Multirepo** plugin to build our documentation. Follow these steps to set up your environment and contribute.
 
 ### 1. Prerequisites
 
-You need **Python** installed on your system. You can check this by running:
+You need **Python** installed. Check your version:
 
 ```bash
 python --version
 
 ```
 
-### 2. Installation
+### 2. Installation & Environment Setup
 
-First, clone the repository and install the required dependencies:
+We use a virtual environment to keep dependencies isolated and ensure plugins like `multirepo` work correctly.
 
 ```bash
-# Clone the repository
+# 1. Clone the repository
 git clone <your-repo-url>
 cd <repo-name>
 
-# Install MkDocs and the Material theme
-pip install mkdocs-material
+# 2. Create a virtual environment
+# On Windows: python -m venv venv
+# On macOS/Linux: python3 -m venv venv
+python -m venv venv
+
+# 3. Activate the environment
+# On Windows:
+.\venv\Scripts\activate
+# On macOS/Linux:
+source venv/bin/activate
+
+# 4. Install all required dependencies
+pip install mkdocs-material mkdocs-multirepo-plugin mkdocstrings[python] pymdown-extensions
 
 ```
 
 ### 3. Local Development
 
-To see your changes in real-time, start the built-in development server:
+To see your changes in real-time, start the development server. **Note:** Ensure your virtual environment is active (you should see `(venv)` in your terminal prompt).
 
 ```bash
 mkdocs serve
@@ -70,10 +80,18 @@ nav:
 
 ### Step 3: Formatting Tips
 
-* **Admonitions:** Use these for notes or warnings.
+* **Admonitions:** Great for highlights.
 ```markdown
 !!! note
     This is a helpful tip for contributors.
+
+```
+
+* **Mermaid Diagrams:** Create flowcharts directly in Markdown:
+```mermaid
+graph TD;
+    A[Start] --> B[Process];
+    B --> C[Finish];
 
 ```
 

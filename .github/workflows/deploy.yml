@@ -1,0 +1,33 @@
+name: Deploy Documentation
+on:
+  push:
+    branches:
+      - main  # Set this to your default branch name
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12' # Use a stable version for the Action
+
+      - name: Install Dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Build and Deploy
+        env:
+          # This variable is what the Multirepo plugin looks for
+          GithubAccessToken: ${{ secrets.GH_TOKEN_MULTIREPO }}
+        run: |
+          mkdocs gh-deploy --force

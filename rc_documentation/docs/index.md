@@ -1,17 +1,24 @@
-# Welcome to MkDocs
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+# TAVP: TED Autonomous Vehicle Project
 
-## Commands
+Welcome to the central documentation hub for **TAVP**. This project aims to develop a 1/10th scale autonomous racing car capable of navigating complex environments using Reinforcement Learning and Computer Vision.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+## 🏎 Project Vision
+Our goal is to implement a robust autonomous stack on a Husqvarna Svartpilen-inspired RC platform, utilizing the **NVIDIA Jetson Orin Nano** for high-level AI and **STM32** for low-level real-time control.
 
-## Project layout
+## 🏗 System Overview
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+```mermaid
+graph TD
+    subgraph "High-Level Processing (Jetson Orin Nano)"
+        A[Camera/LIDAR] --> B{ROS2 Stack}
+        B --> C[Vision Module]
+        B --> D[RL Agent - SAC/PPO]
+    end
+
+    subgraph "Low-Level Control (STM32)"
+        D -->|Serial/UART| E[Drive Controller]
+        E --> F[Servo/Motor]
+    end
+
+    F -->|Telemetry| B
