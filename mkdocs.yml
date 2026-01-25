@@ -1,5 +1,7 @@
 site_name: Autonomous Car Documentation
 site_url: https://tedu-autonomous-rc-car.github.io/rc_documentation/
+site_description: Project at TED University focusing on autonomous RC racing using Reinforcement Learning (SAC/PPO), Jetson Orin Nano, and ROS2.
+site_author: Hajorda
 theme:
   name: material
   logo: assets/images/logo.png
