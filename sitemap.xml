@@ -29,7 +29,19 @@
          <lastmod>2026-01-25</lastmod>
     </url>
     <url>
+         <loc>https://tedu-autonomous-rc-car.github.io/rc_documentation/jetson/gpio-config/</loc>
+         <lastmod>2026-01-25</lastmod>
+    </url>
+    <url>
          <loc>https://tedu-autonomous-rc-car.github.io/rc_documentation/jetson/jetson/</loc>
+         <lastmod>2026-01-25</lastmod>
+    </url>
+    <url>
+         <loc>https://tedu-autonomous-rc-car.github.io/rc_documentation/jetson/rplidar/</loc>
+         <lastmod>2026-01-25</lastmod>
+    </url>
+    <url>
+         <loc>https://tedu-autonomous-rc-car.github.io/rc_documentation/jetson/teleop-node/</loc>
          <lastmod>2026-01-25</lastmod>
     </url>
 </urlset>
