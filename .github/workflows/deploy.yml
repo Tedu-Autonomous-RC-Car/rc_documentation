@@ -14,7 +14,6 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
         with:
-          # Fetch all history so revision dates and multirepo work
           fetch-depth: 0
 
       - name: Set up Python
@@ -22,7 +21,6 @@ jobs:
         with:
           python-version: '3.12' 
 
-      # NEW: Required for generating Social Cards (Material for MkDocs)
       - name: Install System Graphics Dependencies
         run: |
           sudo apt-get update
@@ -34,10 +32,12 @@ jobs:
 
       - name: Build and Deploy
         env:
-          # CHANGE: Multirepo usually looks specifically for GH_TOKEN or GITHUB_TOKEN
           GH_TOKEN: ${{ secrets.GH_TOKEN_MULTIREPO }}
         run: |
-          # Optional: Configure git if gh-deploy has identity issues
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # This line fixes the 'could not read Username' error for private repos
+          git config --global url."https://${GH_TOKEN}@github.com/".insteadOf "https://github.com/"
+          
           mkdocs gh-deploy --force
