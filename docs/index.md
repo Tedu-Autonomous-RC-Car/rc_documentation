@@ -22,3 +22,4 @@ graph TD
     end
 
     F -->|Telemetry| B
+```
