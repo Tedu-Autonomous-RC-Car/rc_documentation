@@ -8,26 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://tedu-autonomous-rc-car.github.io/rc_documentation/">
+        <link rel="canonical" href="https://tedu-autonomous-rc-car.github.io/rc_documentation/hardware/hardware/">
       
       
+        <link rel="prev" href="../chassis_mechanical/">
       
-        <link rel="next" href="setup/">
+      
+        <link rel="next" href="../power_management/">
       
       
         
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
-        <title>Autonomous Car Documentation</title>
+        <title>🔩 Hardware Architecture & Interface - Autonomous Car Documentation</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
       
 
@@ -46,7 +48,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -64,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#tavp-ted-autonomous-vehicle-project" class="md-skip">
+        <a href="#hardware-architecture-interface" class="md-skip">
           Skip to content
         </a>
       
@@ -78,7 +80,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Autonomous Car Documentation" class="md-header__button md-logo" aria-label="Autonomous Car Documentation" data-md-component="logo">
+    <a href="../.." title="Autonomous Car Documentation" class="md-header__button md-logo" aria-label="Autonomous Car Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -98,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              TAVP: TED Autonomous Vehicle Project
+              🔩 Hardware Architecture &amp; Interface
             
           </span>
         </div>
@@ -169,11 +171,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="." class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
         
   
   
@@ -192,7 +192,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="setup/" class="md-tabs__link">
+      <a href="../../setup/" class="md-tabs__link">
         
   
   
@@ -209,11 +209,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="hardware/bom/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../bom/" class="md-tabs__link">
           
   
   
@@ -233,7 +235,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="jetson/jetson/" class="md-tabs__link">
+        <a href="../../jetson/jetson/" class="md-tabs__link">
           
   
   
@@ -267,7 +269,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Autonomous Car Documentation" class="md-nav__button md-logo" aria-label="Autonomous Car Documentation" data-md-component="logo">
+    <a href="../.." title="Autonomous Car Documentation" class="md-nav__button md-logo" aria-label="Autonomous Car Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -282,37 +284,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    TAVP: TED Autonomous Vehicle Project
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -328,48 +303,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#project-vision" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🏎 Project Vision
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#system-overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🏗 System Overview
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -381,7 +314,7 @@
   
   
     <li class="md-nav__item">
-      <a href="setup/" class="md-nav__link">
+      <a href="../../setup/" class="md-nav__link">
         
   
   
@@ -405,28 +338,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   
@@ -444,7 +380,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -462,7 +398,7 @@
   
   
     <li class="md-nav__item">
-      <a href="hardware/bom/" class="md-nav__link">
+      <a href="../bom/" class="md-nav__link">
         
   
   
@@ -490,7 +426,7 @@
   
   
     <li class="md-nav__item">
-      <a href="hardware/chassis_mechanical/" class="md-nav__link">
+      <a href="../chassis_mechanical/" class="md-nav__link">
         
   
   
@@ -515,10 +451,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="hardware/hardware/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔩 Hardware Architecture &amp; Interface
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -534,6 +497,143 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#high-level-system-topology" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏗 High-Level System Topology
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🏗 High-Level System Topology">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#component-specifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🛰 Component Specifications
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#actuator-subsystems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔌 Actuator Subsystems
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔌 Actuator Subsystems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-steering-control-arduino-node-a" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Steering Control (Arduino Node A)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-traction-control-arduino-node-b" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Traction Control (Arduino Node B)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#power-distribution-safety" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚡ Power Distribution &amp; Safety
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⚡ Power Distribution &amp; Safety">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#power-rails" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔋 Power Rails
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-handshake-protocol" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📡 Data Handshake Protocol
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#udev-rule-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔍 Udev Rule Configuration
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -546,7 +646,7 @@
   
   
     <li class="md-nav__item">
-      <a href="hardware/power_management/" class="md-nav__link">
+      <a href="../power_management/" class="md-nav__link">
         
   
   
@@ -574,7 +674,7 @@
   
   
     <li class="md-nav__item">
-      <a href="hardware/sensors/" class="md-nav__link">
+      <a href="../sensors/" class="md-nav__link">
         
   
   
@@ -663,7 +763,7 @@
   
   
     <li class="md-nav__item">
-      <a href="jetson/jetson/" class="md-nav__link">
+      <a href="../../jetson/jetson/" class="md-nav__link">
         
   
   
@@ -718,10 +818,105 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#project-vision" class="md-nav__link">
+  <a href="#high-level-system-topology" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🏎 Project Vision
+        🏗 High-Level System Topology
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🏗 High-Level System Topology">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#component-specifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🛰 Component Specifications
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#actuator-subsystems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔌 Actuator Subsystems
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔌 Actuator Subsystems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-steering-control-arduino-node-a" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Steering Control (Arduino Node A)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-traction-control-arduino-node-b" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Traction Control (Arduino Node B)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#power-distribution-safety" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚡ Power Distribution &amp; Safety
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⚡ Power Distribution &amp; Safety">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#power-rails" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔋 Power Rails
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-handshake-protocol" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📡 Data Handshake Protocol
       
     </span>
   </a>
@@ -729,10 +924,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#system-overview" class="md-nav__link">
+  <a href="#udev-rule-configuration" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🏗 System Overview
+        🔍 Udev Rule Configuration
       
     </span>
   </a>
@@ -756,24 +951,163 @@
 
 
 
-<h1 id="tavp-ted-autonomous-vehicle-project">TAVP: TED Autonomous Vehicle Project</h1>
-<p>Welcome to the central documentation hub for <strong>TAVP</strong>. This project aims to develop a 1/10th scale autonomous racing car capable of navigating complex environments using Reinforcement Learning and Computer Vision.</p>
-<h2 id="project-vision">🏎 Project Vision</h2>
-<p>Our goal is to implement a robust autonomous stack on a Husqvarna Svartpilen-inspired RC platform, utilizing the <strong>NVIDIA Jetson Orin Nano</strong> for high-level AI and <strong>STM32</strong> for low-level real-time control.</p>
-<h2 id="system-overview">🏗 System Overview</h2>
-<pre class="mermaid"><code>graph TD
-    subgraph "High-Level Processing (Jetson Orin Nano)"
-        A[Camera/LIDAR] --&gt; B{ROS2 Stack}
-        B --&gt; C[Vision Module]
-        B --&gt; D[RL Agent - SAC/PPO]
-    end
+<h1 id="hardware-architecture-interface">🔩 Hardware Architecture &amp; Interface</h1>
+<p>This document specifies the physical layer, wiring protocols, and power distribution for the <strong>TAVP (TED Autonomous Vehicle Project)</strong>. The architecture employs a <strong>Distributed Control System (DCS)</strong> pattern, utilizing the high-performance computing of the Jetson Orin Nano while offloading time-critical actuation to secondary microcontrollers.</p>
+<hr />
+<h2 id="high-level-system-topology">🏗 High-Level System Topology</h2>
+<p>The system is centered around the <strong>NVIDIA Jetson Orin Nano</strong>, which serves as the primary compute node for perception and decision-making. To ensure high-precision PWM timing and system safety, actuation is decoupled into two dedicated <strong>Arduino</strong> microcontrollers.</p>
+<h3 id="component-specifications">🛰 Component Specifications</h3>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Model</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Main Compute</strong></td>
+<td>NVIDIA Jetson Orin Nano (8GB)</td>
+<td>ROS2 Node execution, AI Inference (SAC/PPO), and Sensor Fusion.</td>
+</tr>
+<tr>
+<td><strong>Perception (Lidar)</strong></td>
+<td>RPLIDAR A1M8-R6</td>
+<td>360° 2D laser scanning for SLAM and obstacle avoidance.</td>
+</tr>
+<tr>
+<td><strong>Perception (Vision)</strong></td>
+<td>USB Camera (Generic)</td>
+<td>Monocular vision for lane detection and visual navigation.</td>
+</tr>
+<tr>
+<td><strong>Steering MCU</strong></td>
+<td>Arduino Nano/Uno</td>
+<td>Real-time 50Hz PWM generation for the high-torque steering servo.</td>
+</tr>
+<tr>
+<td><strong>Drive MCU</strong></td>
+<td>Arduino Nano/Uno</td>
+<td>Throttle control logic and H-Bridge direction switching.</td>
+</tr>
+<tr>
+<td><strong>DC Motor Driver</strong></td>
+<td>BTS7960 (43A)</td>
+<td>High-current H-Bridge for high-speed traction control.</td>
+</tr>
+<tr>
+<td><strong>Power Source</strong></td>
+<td>3S/4S LiPo Battery</td>
+<td>11.1V - 14.8V main power rail for high-performance runs.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="actuator-subsystems">🔌 Actuator Subsystems</h2>
+<h3 id="1-steering-control-arduino-node-a">1. Steering Control (Arduino Node A)</h3>
+<p>To ensure smooth and jitter-free cornering—essential for Reinforcement Learning stability—the Steering MCU maintains a constant <strong>50Hz PWM signal</strong>. It receives steering angles from the Jetson via Serial at <strong>115200 baud</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Arduino Pin</th>
+<th>Connection</th>
+<th>Logic / Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>D9</strong></td>
+<td><strong>DSSERVO DS3235</strong></td>
+<td>PWM Signal (1000µs - 2000µs range)</td>
+</tr>
+<tr>
+<td><strong>5V / VIN</strong></td>
+<td>External BEC</td>
+<td>Dedicated 6V/3A Power source to handle 35kg torque</td>
+</tr>
+<tr>
+<td><strong>GND</strong></td>
+<td>Common Ground</td>
+<td>Signal reference to prevent noise-induced jitter</td>
+</tr>
+</tbody>
+</table>
+<h3 id="2-traction-control-arduino-node-b">2. Traction Control (Arduino Node B)</h3>
+<p>The Drive MCU translates throttle commands into PWM duty cycles and manages the "Direction" pins for the BTS7960 high-current driver.</p>
+<table>
+<thead>
+<tr>
+<th>Arduino Pin</th>
+<th>Connection</th>
+<th>Logic / Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>D5 (PWM)</strong></td>
+<td><strong>RPWM / LPWM</strong></td>
+<td>Speed Control via Duty Cycle (0-255)</td>
+</tr>
+<tr>
+<td><strong>D4</strong></td>
+<td><strong>L_EN / R_EN</strong></td>
+<td>H-Bridge Enable pins (Logic High = Active)</td>
+</tr>
+<tr>
+<td><strong>GND</strong></td>
+<td>Common Ground</td>
+<td>High-current reference ground</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="power-distribution-safety">⚡ Power Distribution &amp; Safety</h2>
+<p>Autonomous systems require stable power isolation to prevent logic brownouts during high-current surges from the <strong>RS775 DC Motors</strong>.</p>
+<h3 id="power-rails">🔋 Power Rails</h3>
+<ul>
+<li><strong>Logic Rail (5V):</strong> Powered by a <strong>5V/5A Buck Converter</strong>. This rail independently feeds the Jetson Orin Nano, USB Hub, and sensors.</li>
+<li><strong>Actuator Rail (11.1V-14.8V):</strong> Direct connection from the LiPo battery to the BTS7960 Motor Driver B+ terminals.</li>
+<li><strong>Servo Rail (6V):</strong> A separate <strong>6V Regulator</strong> isolates the high-torque steering servo from the logic rail to eliminate electromagnetic interference (EMI).</li>
+</ul>
+<blockquote>
+<p>[!CAUTION]
+<strong>Common Ground Rule:</strong> All ground (GND) wires from the Jetson, Arduinos, Motor Driver, and Battery <strong>must</strong> be connected at a single <strong>Star Ground</strong> point. This is critical to prevent ground loops that cause sensor data corruption.</p>
+</blockquote>
+<hr />
+<h2 id="data-handshake-protocol">📡 Data Handshake Protocol</h2>
+<p>Communication between the Jetson (Master) and Arduinos (Slaves) follows a framed packet format to minimize latency and ensure data integrity:</p>
+<table>
+<thead>
+<tr>
+<th>Header</th>
+<th>Steering Angle</th>
+<th>Throttle Value</th>
+<th>Checksum</th>
+<th>Terminator</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>$</code></td>
+<td><code>-45.0</code> to <code>45.0</code></td>
+<td><code>0</code> to <code>255</code></td>
+<td><code>HEX</code></td>
+<td><code>\n</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="udev-rule-configuration">🔍 Udev Rule Configuration</h2>
+<p>To ensure the Jetson consistently identifies the correct MCU for each task, persistent device naming is implemented via Udev rules.</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># /etc/udev/rules.d/99-arduino-tavp.rules</span>
 
-    subgraph "Low-Level Control (STM32)"
-        D --&gt;|Serial/UART| E[Drive Controller]
-        E --&gt; F[Servo/Motor]
-    end
+<span class="c1"># Steering Controller (CH340/Generic)</span>
+<span class="nv">SUBSYSTEM</span><span class="o">==</span><span class="s2">&quot;tty&quot;</span>,<span class="w"> </span>ATTRS<span class="o">{</span>idVendor<span class="o">}==</span><span class="s2">&quot;1a86&quot;</span>,<span class="w"> </span>ATTRS<span class="o">{</span>idProduct<span class="o">}==</span><span class="s2">&quot;7523&quot;</span>,<span class="w"> </span><span class="nv">SYMLINK</span><span class="o">+=</span><span class="s2">&quot;ttySteering&quot;</span>
 
-    F --&gt;|Telemetry| B</code></pre>
+<span class="c1"># Drive Controller (Official/Arduino)</span>
+<span class="nv">SUBSYSTEM</span><span class="o">==</span><span class="s2">&quot;tty&quot;</span>,<span class="w"> </span>ATTRS<span class="o">{</span>idVendor<span class="o">}==</span><span class="s2">&quot;2341&quot;</span>,<span class="w"> </span>ATTRS<span class="o">{</span>idProduct<span class="o">}==</span><span class="s2">&quot;0043&quot;</span>,<span class="w"> </span><span class="nv">SYMLINK</span><span class="o">+=</span><span class="s2">&quot;ttyDrive&quot;</span>
+</code></pre></div>
 
 
 
@@ -794,7 +1128,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="January 25, 2026 01:04:53 UTC">January 25, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="January 25, 2026 01:36:45 UTC">January 25, 2026</span>
   </span>
 
     
@@ -868,10 +1202,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "content.code.copy", "content.code.annotate", "announce.dismiss", "content.code.copy", "navigation.tabs"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "content.code.copy", "content.code.annotate", "announce.dismiss", "content.code.copy", "navigation.tabs"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>

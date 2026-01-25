@@ -8,28 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://tedu-autonomous-rc-car.github.io/rc_documentation/setup/">
+        <link rel="canonical" href="https://tedu-autonomous-rc-car.github.io/rc_documentation/hardware/power_management/">
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../hardware/">
       
       
-        <link rel="next" href="../hardware/bom/">
+        <link rel="next" href="../sensors/">
       
       
         
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
-        <title>🚀 Getting Started - Autonomous Car Documentation</title>
+        <title>Power management - Autonomous Car Documentation</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
       
 
@@ -48,7 +48,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#getting-started" class="md-skip">
+        <a href="#battery-specifications-3s-lipo" class="md-skip">
           Skip to content
         </a>
       
@@ -80,7 +80,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Autonomous Car Documentation" class="md-header__button md-logo" aria-label="Autonomous Car Documentation" data-md-component="logo">
+    <a href="../.." title="Autonomous Car Documentation" class="md-header__button md-logo" aria-label="Autonomous Car Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              🚀 Getting Started
+              Power management
             
           </span>
         </div>
@@ -173,7 +173,7 @@
   
   
     <li class="md-tabs__item">
-      <a href=".." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
   
@@ -190,11 +190,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="./" class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../../setup/" class="md-tabs__link">
         
   
   
@@ -211,11 +209,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../hardware/bom/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../bom/" class="md-tabs__link">
           
   
   
@@ -235,7 +235,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../jetson/jetson/" class="md-tabs__link">
+        <a href="../../jetson/jetson/" class="md-tabs__link">
           
   
   
@@ -269,7 +269,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Autonomous Car Documentation" class="md-nav__button md-logo" aria-label="Autonomous Car Documentation" data-md-component="logo">
+    <a href="../.." title="Autonomous Car Documentation" class="md-nav__button md-logo" aria-label="Autonomous Car Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -287,7 +287,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -311,37 +311,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    🚀 Getting Started
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../setup/" class="md-nav__link">
         
   
   
@@ -357,148 +330,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📋 Prerequisites
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#1-system-workspace-setup" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. System Workspace Setup
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-install-dependencies" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Install Dependencies
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="2. Install Dependencies">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#python-libraries" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Python Libraries
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ros2-packages" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ROS2 Packages
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-hardware-permissions-critical" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Hardware Permissions (Critical)
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="3. Hardware Permissions (Critical)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#identifying-the-arduinos" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Identifying the Arduinos
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-building-the-project" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Building the Project
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-documentation-development" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5. Documentation Development
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#troubleshooting-common-issues" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🛠 Troubleshooting Common Issues
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -507,28 +338,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   
@@ -546,7 +380,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -564,7 +398,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hardware/bom/" class="md-nav__link">
+      <a href="../bom/" class="md-nav__link">
         
   
   
@@ -592,7 +426,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hardware/chassis_mechanical/" class="md-nav__link">
+      <a href="../chassis_mechanical/" class="md-nav__link">
         
   
   
@@ -620,7 +454,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hardware/hardware/" class="md-nav__link">
+      <a href="../hardware/" class="md-nav__link">
         
   
   
@@ -645,10 +479,35 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../hardware/power_management/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Power management
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -664,6 +523,185 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#battery-specifications-3s-lipo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔋 Battery Specifications: 3S LiPo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#power-distribution-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏗️ Power Distribution Architecture
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🏗️ Power Distribution Architecture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-high-power-actuator-rail-111v-126v" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. High-Power Actuator Rail (11.1V - 12.6V)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-logic-rail-51v" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Logic Rail (5.1V)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-servo-rail-60v" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Servo Rail (6.0V)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wiring-guide-component-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔌 Wiring Guide: Component Integration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔌 Wiring Guide: Component Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#xl4005-buck-converter-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        XL4005 Buck Converter Setup
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bts7960b-motor-driver-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        BTS7960B Motor Driver Integration
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#safety-protocols-maintenance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚠️ Safety Protocols &amp; Maintenance
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⚠️ Safety Protocols &amp; Maintenance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-the-star-ground-rule" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. The Star Ground Rule
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-heat-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Heat Management
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-charging-procedure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Charging Procedure
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#power-budget-consumption-idle-vs-peak" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📊 Power Budget Consumption (Idle vs. Peak)
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -676,7 +714,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hardware/sensors/" class="md-nav__link">
+      <a href="../sensors/" class="md-nav__link">
         
   
   
@@ -765,7 +803,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../jetson/jetson/" class="md-nav__link">
+      <a href="../../jetson/jetson/" class="md-nav__link">
         
   
   
@@ -810,8 +848,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -820,10 +856,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
+  <a href="#battery-specifications-3s-lipo" class="md-nav__link">
     <span class="md-ellipsis">
       
-        📋 Prerequisites
+        🔋 Battery Specifications: 3S LiPo
       
     </span>
   </a>
@@ -831,33 +867,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#1-system-workspace-setup" class="md-nav__link">
+  <a href="#power-distribution-architecture" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. System Workspace Setup
+        🏗️ Power Distribution Architecture
       
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-install-dependencies" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Install Dependencies
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="2. Install Dependencies">
+    <nav class="md-nav" aria-label="🏗️ Power Distribution Architecture">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#python-libraries" class="md-nav__link">
+  <a href="#1-high-power-actuator-rail-111v-126v" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Python Libraries
+        1. High-Power Actuator Rail (11.1V - 12.6V)
       
     </span>
   </a>
@@ -865,10 +890,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#ros2-packages" class="md-nav__link">
+  <a href="#2-logic-rail-51v" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ROS2 Packages
+        2. Logic Rail (5.1V)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-servo-rail-60v" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Servo Rail (6.0V)
       
     </span>
   </a>
@@ -881,22 +917,33 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-hardware-permissions-critical" class="md-nav__link">
+  <a href="#wiring-guide-component-integration" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Hardware Permissions (Critical)
+        🔌 Wiring Guide: Component Integration
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="3. Hardware Permissions (Critical)">
+    <nav class="md-nav" aria-label="🔌 Wiring Guide: Component Integration">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#identifying-the-arduinos" class="md-nav__link">
+  <a href="#xl4005-buck-converter-setup" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Identifying the Arduinos
+        XL4005 Buck Converter Setup
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bts7960b-motor-driver-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        BTS7960B Motor Driver Integration
       
     </span>
   </a>
@@ -909,32 +956,60 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-building-the-project" class="md-nav__link">
+  <a href="#safety-protocols-maintenance" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Building the Project
+        ⚠️ Safety Protocols &amp; Maintenance
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⚠️ Safety Protocols &amp; Maintenance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-the-star-ground-rule" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. The Star Ground Rule
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#5-documentation-development" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#2-heat-management" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. Documentation Development
+        2. Heat Management
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#troubleshooting-common-issues" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#3-charging-procedure" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🛠 Troubleshooting Common Issues
+        3. Charging Procedure
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#power-budget-consumption-idle-vs-peak" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📊 Power Budget Consumption (Idle vs. Peak)
       
     </span>
   </a>
@@ -958,75 +1033,140 @@
 
 
 
-<h1 id="getting-started">🚀 Getting Started</h1>
-<p>This guide will help you set up the development environment for the TAVP Autonomous RC Car. Follow these steps to ensure your system is compatible with our ROS2 stack and hardware interface.</p>
-<h2 id="prerequisites">📋 Prerequisites</h2>
-<p>Before starting, ensure your machine (Host PC or Jetson) meets these requirements:</p>
-<ul>
-<li><strong>OS:</strong> Ubuntu 22.04 LTS (Jammy Jellyfish)</li>
-<li><strong>Middleware:</strong> ROS2 Humble Hawksbill</li>
-<li><strong>Python:</strong> 3.10+ (Note: Development on the documentation repo uses 3.12+)</li>
-</ul>
-<hr />
-<h2 id="1-system-workspace-setup">1. System Workspace Setup</h2>
-<p>First, create a dedicated ROS2 workspace for the project.</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># Create the workspace directory</span>
-mkdir<span class="w"> </span>-p<span class="w"> </span>~/tavp_ws/src
-<span class="nb">cd</span><span class="w"> </span>~/tavp_ws/src
+  <h1>Power management</h1>
 
-<span class="c1"># Clone the main documentation and sub-modules</span>
-git<span class="w"> </span>clone<span class="w"> </span>https://github.com/Tedu-Autonomous-RC-Car/rc_documentation.git
-</code></pre></div>
+<h2 id="battery-specifications-3s-lipo">🔋 Battery Specifications: 3S LiPo</h2>
+<p>The system is powered by a high-capacity <strong>3S (3-Cell) Lithium Polymer (LiPo)</strong> battery designed for long-duration autonomous testing.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Capacity</strong></td>
+<td>5500 mAh</td>
+</tr>
+<tr>
+<td><strong>Nominal Voltage</strong></td>
+<td>11.1V (3.7V per cell)</td>
+</tr>
+<tr>
+<td><strong>Max Voltage</strong></td>
+<td>12.6V (4.2V per cell)</td>
+</tr>
+<tr>
+<td><strong>Storage Voltage</strong></td>
+<td>11.4V (3.8V per cell)</td>
+</tr>
+<tr>
+<td><strong>Discharge Rating</strong></td>
+<td>~35C - 50C (Estimated)</td>
+</tr>
+</tbody>
+</table>
 <hr />
-<h2 id="2-install-dependencies">2. Install Dependencies</h2>
-<p>We use a specific set of tools for AI inference and embedded communication.</p>
-<h3 id="python-libraries">Python Libraries</h3>
-<p>Install the core requirements for the documentation and the Jetson control logic:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/tavp_ws/src/rc_documentation
-pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
-</code></pre></div>
-<h3 id="ros2-packages">ROS2 Packages</h3>
-<p>Install the necessary ROS2 drivers for our sensors and serial communication:</p>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>update
-sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>ros-humble-joy<span class="w"> </span>ros-humble-teleop-twist-joy<span class="w"> </span><span class="se">\</span>
-<span class="w">                 </span>ros-humble-serial-driver<span class="w"> </span>ros-humble-v4l2-camera<span class="w"> </span><span class="se">\</span>
-<span class="w">                 </span>ros-humble-urg-node<span class="w"> </span><span class="c1"># If using Hokuyo LIDAR</span>
-</code></pre></div>
-<hr />
-<h2 id="3-hardware-permissions-critical">3. Hardware Permissions (Critical)</h2>
-<p>To allow the Jetson to communicate with the <strong>two Arduinos</strong> without <code>sudo</code> every time, you must add your user to the <code>dialout</code> group.</p>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>usermod<span class="w"> </span>-a<span class="w"> </span>-G<span class="w"> </span>dialout<span class="w"> </span><span class="nv">$USER</span>
-<span class="c1"># REBOOT your machine after running this!</span>
-</code></pre></div>
-<h3 id="identifying-the-arduinos">Identifying the Arduinos</h3>
-<p>Since we have two Arduinos (Steering and Drive), we use <strong>udev rules</strong> to fix their names. Create a new rules file:</p>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>nano<span class="w"> </span>/etc/udev/rules.d/99-arduino.rules
-</code></pre></div>
-<p>Add these lines (Update the <code>idProduct</code> based on your specific Arduino models):</p>
-<div class="highlight"><pre><span></span><code>SUBSYSTEM==&quot;tty&quot;, ATTRS{idVendor}==&quot;1a86&quot;, SYMLINK+=&quot;ttySteering&quot;
-SUBSYSTEM==&quot;tty&quot;, ATTRS{idVendor}==&quot;2341&quot;, SYMLINK+=&quot;ttyDrive&quot;
-</code></pre></div>
-<hr />
-<h2 id="4-building-the-project">4. Building the Project</h2>
-<p>Once the dependencies are installed, build the workspace using <code>colcon</code>.</p>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/tavp_ws
-colcon<span class="w"> </span>build<span class="w"> </span>--symlink-install
-<span class="nb">source</span><span class="w"> </span>install/setup.bash
-</code></pre></div>
-<hr />
-<h2 id="5-documentation-development">5. Documentation Development</h2>
-<p>If you are contributing to this documentation site, you can run a local preview server:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/tavp_ws/src/rc_documentation
-mkdocs<span class="w"> </span>serve
-</code></pre></div>
-<p>Your live preview will be available at <code>http://127.0.0.1:8000</code>.</p>
-<hr />
-<h2 id="troubleshooting-common-issues">🛠 Troubleshooting Common Issues</h2>
+<h2 id="power-distribution-architecture">🏗️ Power Distribution Architecture</h2>
+<p>The electrical system is split into three isolated rails to prevent the high-frequency noise of the motors from affecting the AI inference logic.</p>
+<h3 id="1-high-power-actuator-rail-111v-126v">1. High-Power Actuator Rail (11.1V - 12.6V)</h3>
 <ul>
-<li><strong>Serial Port Busy:</strong> Ensure no other serial monitors (like Arduino IDE) are open.</li>
-<li><strong>ModuleNotFoundError:</strong> Ensure you have activated your Python virtual environment if you are using one.</li>
-<li><strong>Build Failure:</strong> Check that you have sourced your ROS2 installation: <code>source /opt/ros/humble/setup.bash</code>.</li>
+<li><strong>Source:</strong> Direct connection from the 3S LiPo XT60 connector.</li>
+<li><strong>Loads:</strong> <strong>BTS7960B 43A Motor Driver</strong> and the <strong>RS775 DC Motors</strong>.</li>
+<li><strong>Safety:</strong> Connects to the <strong>B+ and B-</strong> terminals of the BTS7960.</li>
 </ul>
+<h3 id="2-logic-rail-51v">2. Logic Rail (5.1V)</h3>
+<ul>
+<li><strong>Converter:</strong> <strong>XL4005 DC-DC Buck Converter</strong>.</li>
+<li><strong>Settings:</strong> Input (11.1V) → Output (5.1V / 5A).</li>
+<li><strong>Loads:</strong> <strong>NVIDIA Jetson Orin Nano</strong>, <strong>RPLIDAR A1</strong>, and the <strong>USB Hub</strong>.</li>
+<li><strong>Note:</strong> Set the voltage slightly higher than 5.0V (to 5.1V) to account for voltage drops across USB cables under load.</li>
+</ul>
+<h3 id="3-servo-rail-60v">3. Servo Rail (6.0V)</h3>
+<ul>
+<li><strong>Converter:</strong> Secondary <strong>XL4005</strong> or dedicated BEC.</li>
+<li><strong>Loads:</strong> <strong>DSSERVO DS3235 (35kg)</strong>.</li>
+<li><strong>Rationale:</strong> This high-torque servo can draw up to 3A during rapid cornering. Powering it separately prevents "brownouts" on the Jetson's logic rail.</li>
+</ul>
+<hr />
+<h2 id="wiring-guide-component-integration">🔌 Wiring Guide: Component Integration</h2>
+<h3 id="xl4005-buck-converter-setup">XL4005 Buck Converter Setup</h3>
+<ol>
+<li>Connect the LiPo leads to the <strong>IN+</strong> and <strong>IN-</strong> terminals.</li>
+<li>Use a multimeter to adjust the onboard potentiometer until the <strong>OUT+</strong> reads exactly <strong>5.1V</strong>.</li>
+<li>Connect the <strong>OUT+</strong> to the Jetson's 5V DC barrel jack or GPIO pins (Pins 2 or 4).</li>
+</ol>
+<h3 id="bts7960b-motor-driver-integration">BTS7960B Motor Driver Integration</h3>
+<ul>
+<li><strong>VCC:</strong> Connect to the Arduino's 5V pin for logic.</li>
+<li><strong>GND:</strong> Connect to the <strong>Common Star Ground</strong>.</li>
+<li><strong>RPWM / LPWM:</strong> Connect to Arduino Drive Node (D5/D6).</li>
+<li><strong>R_EN / L_EN:</strong> Connect to Arduino Drive Node (D4).</li>
+<li><strong>B+ / B-:</strong> Direct LiPo connection.</li>
+<li><strong>M+ / M-:</strong> Output to the <strong>RS775 Motors</strong>.</li>
+</ul>
+<hr />
+<h2 id="safety-protocols-maintenance">⚠️ Safety Protocols &amp; Maintenance</h2>
+<blockquote>
+<p>[!DANGER]
+<strong>Low Voltage Cutoff (LVC):</strong> Never let your 3S LiPo drop below <strong>3.0V per cell (9.0V total)</strong>. Use a LiPo buzzer set to <strong>3.4V per cell</strong> to avoid permanent battery damage.</p>
+</blockquote>
+<h3 id="1-the-star-ground-rule">1. The Star Ground Rule</h3>
+<p>To ensure sensor accuracy (especially the <strong>RPLIDAR A1</strong> and <strong>IMU</strong>), all ground wires must meet at a single point near the battery connector.</p>
+<ul>
+<li><strong>DO NOT</strong> daisy-chain ground wires from the motor driver to the Jetson.</li>
+</ul>
+<h3 id="2-heat-management">2. Heat Management</h3>
+<ul>
+<li>The <strong>BTS7960B</strong> and <strong>XL4005</strong> can get hot during intensive RL training sessions.</li>
+<li><strong>Maintenance:</strong> Check the heat sinks for the <strong>Creality Apple Green PLA+</strong> decks to ensure they aren't deforming the plastic.</li>
+</ul>
+<h3 id="3-charging-procedure">3. Charging Procedure</h3>
+<ul>
+<li>Always use a balance charger in <strong>Balance Charge</strong> mode at <strong>1C (5.5A)</strong>.</li>
+<li>Never leave the 5500mAh LiPo charging unattended.</li>
+<li>Store in a LiPo-Safe bag when not in use.</li>
+</ul>
+<hr />
+<h2 id="power-budget-consumption-idle-vs-peak">📊 Power Budget Consumption (Idle vs. Peak)</h2>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Idle Current</th>
+<th>Peak Current</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Jetson Orin Nano</td>
+<td>0.8A</td>
+<td>2.5A</td>
+</tr>
+<tr>
+<td>RPLIDAR A1</td>
+<td>0.1A</td>
+<td>0.5A</td>
+</tr>
+<tr>
+<td>DS3235 Servo</td>
+<td>0.1A</td>
+<td>3.2A</td>
+</tr>
+<tr>
+<td>Dual RS775 Motors</td>
+<td>2.0A</td>
+<td>25.0A+</td>
+</tr>
+<tr>
+<td><strong>Estimated Total</strong></td>
+<td><strong>~3.0A</strong></td>
+<td><strong>~31.4A</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Would you like me to create a "Software Installation" guide next for the Jetson Orin Nano, including ROS2 and the LIDAR drivers?</strong></p>
 
 
 
@@ -1047,7 +1187,7 @@ mkdocs<span class="w"> </span>serve
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="January 25, 2026 01:17:56 UTC">January 25, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="January 25, 2026 01:36:45 UTC">January 25, 2026</span>
   </span>
 
     
@@ -1121,10 +1261,10 @@ mkdocs<span class="w"> </span>serve
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "content.code.copy", "content.code.annotate", "announce.dismiss", "content.code.copy", "navigation.tabs"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "content.code.copy", "content.code.annotate", "announce.dismiss", "content.code.copy", "navigation.tabs"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>

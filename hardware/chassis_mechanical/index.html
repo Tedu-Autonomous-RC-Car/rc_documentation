@@ -8,26 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://tedu-autonomous-rc-car.github.io/rc_documentation/">
+        <link rel="canonical" href="https://tedu-autonomous-rc-car.github.io/rc_documentation/hardware/chassis_mechanical/">
       
       
+        <link rel="prev" href="../bom/">
       
-        <link rel="next" href="setup/">
+      
+        <link rel="next" href="../hardware/">
       
       
         
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
-        <title>Autonomous Car Documentation</title>
+        <title>🛠️ Chassis & Mechanical Design Guide - Autonomous Car Documentation</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
       
 
@@ -46,7 +48,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -64,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#tavp-ted-autonomous-vehicle-project" class="md-skip">
+        <a href="#chassis-mechanical-design-guide" class="md-skip">
           Skip to content
         </a>
       
@@ -78,7 +80,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Autonomous Car Documentation" class="md-header__button md-logo" aria-label="Autonomous Car Documentation" data-md-component="logo">
+    <a href="../.." title="Autonomous Car Documentation" class="md-header__button md-logo" aria-label="Autonomous Car Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -98,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              TAVP: TED Autonomous Vehicle Project
+              🛠️ Chassis &amp; Mechanical Design Guide
             
           </span>
         </div>
@@ -169,11 +171,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="." class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
         
   
   
@@ -192,7 +192,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="setup/" class="md-tabs__link">
+      <a href="../../setup/" class="md-tabs__link">
         
   
   
@@ -209,11 +209,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="hardware/bom/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../bom/" class="md-tabs__link">
           
   
   
@@ -233,7 +235,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="jetson/jetson/" class="md-tabs__link">
+        <a href="../../jetson/jetson/" class="md-tabs__link">
           
   
   
@@ -267,7 +269,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Autonomous Car Documentation" class="md-nav__button md-logo" aria-label="Autonomous Car Documentation" data-md-component="logo">
+    <a href="../.." title="Autonomous Car Documentation" class="md-nav__button md-logo" aria-label="Autonomous Car Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -280,6 +282,145 @@
     
       
       
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TAVP: TED Autonomous Vehicle Project
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🚀 Getting Started
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hardware
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Hardware
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bom/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📋 Bill of Materials (BOM) - Updated
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
   
   
     
@@ -301,7 +442,7 @@
   <span class="md-ellipsis">
     
   
-    TAVP: TED Autonomous Vehicle Project
+    🛠️ Chassis &amp; Mechanical Design Guide
   
 
     
@@ -312,14 +453,14 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="." class="md-nav__link md-nav__link--active">
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
     
   
-    TAVP: TED Autonomous Vehicle Project
+    🛠️ Chassis &amp; Mechanical Design Guide
   
 
     
@@ -345,10 +486,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#project-vision" class="md-nav__link">
+  <a href="#1-structural-overview" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🏎 Project Vision
+        🏗️ 1. Structural Overview
       
     </span>
   </a>
@@ -356,13 +497,63 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#system-overview" class="md-nav__link">
+  <a href="#2-custom-3d-printed-components" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🏗 System Overview
+        ⚙️ 2. Custom 3D Printed Components
       
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-drivetrain-suspension" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏎️ 3. Drivetrain &amp; Suspension
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-technical-drawings-dimensions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📏 4. Technical Drawings &amp; Dimensions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-assembly-instructions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🤝 5. Assembly Instructions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🤝 5. Assembly Instructions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tips-for-the-mechanical-lead" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tips for the Mechanical Lead:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -373,114 +564,6 @@
     </li>
   
 
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="setup/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    🚀 Getting Started
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Hardware
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Hardware
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="hardware/bom/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    📋 Bill of Materials (BOM) - Updated
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
               
             
               
@@ -490,35 +573,7 @@
   
   
     <li class="md-nav__item">
-      <a href="hardware/chassis_mechanical/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    🛠️ Chassis &amp; Mechanical Design Guide
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="hardware/hardware/" class="md-nav__link">
+      <a href="../hardware/" class="md-nav__link">
         
   
   
@@ -546,7 +601,7 @@
   
   
     <li class="md-nav__item">
-      <a href="hardware/power_management/" class="md-nav__link">
+      <a href="../power_management/" class="md-nav__link">
         
   
   
@@ -574,7 +629,7 @@
   
   
     <li class="md-nav__item">
-      <a href="hardware/sensors/" class="md-nav__link">
+      <a href="../sensors/" class="md-nav__link">
         
   
   
@@ -663,7 +718,7 @@
   
   
     <li class="md-nav__item">
-      <a href="jetson/jetson/" class="md-nav__link">
+      <a href="../../jetson/jetson/" class="md-nav__link">
         
   
   
@@ -718,10 +773,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#project-vision" class="md-nav__link">
+  <a href="#1-structural-overview" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🏎 Project Vision
+        🏗️ 1. Structural Overview
       
     </span>
   </a>
@@ -729,13 +784,63 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#system-overview" class="md-nav__link">
+  <a href="#2-custom-3d-printed-components" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🏗 System Overview
+        ⚙️ 2. Custom 3D Printed Components
       
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-drivetrain-suspension" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏎️ 3. Drivetrain &amp; Suspension
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-technical-drawings-dimensions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📏 4. Technical Drawings &amp; Dimensions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-assembly-instructions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🤝 5. Assembly Instructions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🤝 5. Assembly Instructions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tips-for-the-mechanical-lead" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tips for the Mechanical Lead:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -756,24 +861,137 @@
 
 
 
-<h1 id="tavp-ted-autonomous-vehicle-project">TAVP: TED Autonomous Vehicle Project</h1>
-<p>Welcome to the central documentation hub for <strong>TAVP</strong>. This project aims to develop a 1/10th scale autonomous racing car capable of navigating complex environments using Reinforcement Learning and Computer Vision.</p>
-<h2 id="project-vision">🏎 Project Vision</h2>
-<p>Our goal is to implement a robust autonomous stack on a Husqvarna Svartpilen-inspired RC platform, utilizing the <strong>NVIDIA Jetson Orin Nano</strong> for high-level AI and <strong>STM32</strong> for low-level real-time control.</p>
-<h2 id="system-overview">🏗 System Overview</h2>
-<pre class="mermaid"><code>graph TD
-    subgraph "High-Level Processing (Jetson Orin Nano)"
-        A[Camera/LIDAR] --&gt; B{ROS2 Stack}
-        B --&gt; C[Vision Module]
-        B --&gt; D[RL Agent - SAC/PPO]
-    end
-
-    subgraph "Low-Level Control (STM32)"
-        D --&gt;|Serial/UART| E[Drive Controller]
-        E --&gt; F[Servo/Motor]
-    end
-
-    F --&gt;|Telemetry| B</code></pre>
+<h1 id="chassis-mechanical-design-guide">🛠️ Chassis &amp; Mechanical Design Guide</h1>
+<p>This page serves as the technical reference for the physical assembly of the <strong>TAVP Autonomous RC Car</strong>. Documenting the mechanical integrity is just as critical as the AI for ensuring a stable racing platform.</p>
+<hr />
+<h2 id="1-structural-overview">🏗️ 1. Structural Overview</h2>
+<ul>
+<li><strong>Chassis Type:</strong> Describe the base RC frame being used.</li>
+<li><strong>Modifications:</strong> Detail any cuts, extensions, or reinforcements made to the original frame.</li>
+<li><strong>Material Choice:</strong> Explain the use of <strong>Creality Ender PLA+</strong> for custom parts. Mention why PLA+ was chosen over standard PLA (e.g., higher impact resistance and durability for high-speed runs).</li>
+</ul>
+<h2 id="2-custom-3d-printed-components">⚙️ 2. Custom 3D Printed Components</h2>
+<p>List all custom-designed parts. For each part, your team member should include:</p>
+<ul>
+<li><strong>Component Name:</strong> (e.g., Jetson Mounting Deck, LIDAR Tower, Camera Bracket).</li>
+<li><strong>Design Rationale:</strong> Why is it shaped this way? (e.g., "The LIDAR tower is elevated by 5cm to clear the front wheels and avoid signal occlusion").</li>
+<li><strong>Print Settings:</strong></li>
+<li><strong>Infill:</strong> (e.g., 40% Gyroid for strength).</li>
+<li><strong>Wall Count:</strong> (e.g., 4 walls for structural rigidity).</li>
+<li><strong>Filament Used:</strong> Creality Apple Green PLA+.</li>
+</ul>
+<h2 id="3-drivetrain-suspension">🏎️ 3. Drivetrain &amp; Suspension</h2>
+<ul>
+<li><strong>Motor Integration:</strong> Detail the mounting of the <strong>RS775 DC Motors</strong>.</li>
+<li><strong>Bearings:</strong> Specify the placement of the <strong>MR105ZZ Miniature Ball Bearings</strong> within the wheel hubs or transmission.</li>
+<li><strong>Suspension Tuning:</strong> Document any changes to the spring rates or oil viscosity in the shocks to account for the added weight of the <strong>Jetson Orin Nano</strong> and the <strong>3S/4S LiPo battery</strong>.</li>
+</ul>
+<h2 id="4-technical-drawings-dimensions">📏 4. Technical Drawings &amp; Dimensions</h2>
+<ul>
+<li><strong>Weight Distribution:</strong> Provide the final weight of the car and the Center of Mass (CoM).</li>
+<li><strong>Dimensions:</strong> Width, length, and wheelbase in millimeters.</li>
+<li><strong>Clearance:</strong> Ground clearance, especially regarding the bottom-mounted components.</li>
+</ul>
+<h2 id="5-assembly-instructions">🤝 5. Assembly Instructions</h2>
+<p>A step-by-step guide for rebuilding the chassis if a component breaks during testing:</p>
+<ol>
+<li>Base frame preparation.</li>
+<li>Drivetrain and bearing installation.</li>
+<li>Mounting the lower electronics deck.</li>
+<li>Installing the sensor towers (LIDAR and Camera).</li>
+</ol>
+<hr />
+<h3 id="tips-for-the-mechanical-lead">Tips for the Mechanical Lead:</h3>
+<blockquote>
+<p>[!TIP]
+<strong>CAD Integration:</strong> Encourage them to export "Exploded View" images from Fusion360 or SolidWorks to put into this page. It makes the documentation look professional for the <strong>November 2026 graduation</strong> presentation.</p>
+</blockquote>
+<p>This troubleshooting and maintenance guide is designed for the mechanical lead of the <strong>TAVP project</strong>. It focuses on the specific hardware components you've procured, such as the <strong>PLA+ 3D printed parts</strong>, <strong>RS775 motors</strong>, and <strong>MR105ZZ bearings</strong>.</p>
+<hr />
+<h1 id="mechanical-troubleshooting-maintenance">🔧 Mechanical Troubleshooting &amp; Maintenance</h1>
+<p>High-speed autonomous testing puts significant stress on the chassis. Use this guide to identify, document, and resolve mechanical failures during the development of the TAVP RC car.</p>
+<h2 id="1-3d-printed-component-issues-pla">🛠️ 1. 3D Printed Component Issues (PLA+)</h2>
+<p>Since the chassis relies on <strong>Creality Ender PLA+</strong> for structural decks and sensor towers, monitor these specific failure points:</p>
+<table>
+<thead>
+<tr>
+<th>Issue</th>
+<th>Potential Cause</th>
+<th>Recommended Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Layer Delamination</strong></td>
+<td>Low print temperature or high stress on the <strong>LIDAR tower</strong>.</td>
+<td>Increase print temperature by 5°C; check infill density.</td>
+</tr>
+<tr>
+<td><strong>Heat Deformation</strong></td>
+<td>The <strong>Jetson Orin Nano</strong> or <strong>BTS7960 driver</strong> is overheating the mounting deck.</td>
+<td>Install thermal spacers or add active cooling (fans) to the electronics deck.</td>
+</tr>
+<tr>
+<td><strong>Impact Cracking</strong></td>
+<td>PLA+ is tough, but high-speed collisions exceed its limit.</td>
+<td>Increase "Wall Count" to 6-8 in CAD; consider TPU for front bumpers.</td>
+</tr>
+<tr>
+<td><strong>Warping</strong></td>
+<td>Uneven cooling during the print of the large main chassis plates.</td>
+<td>Use a heated bed (60°C) and ensure a draft-free printing environment.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="2-drivetrain-actuation">⚙️ 2. Drivetrain &amp; Actuation</h2>
+<p>The <strong>RS775 DC Motors</strong> and <strong>DSSERVO 35kg servo</strong> provide high power, which can lead to rapid wear on moving parts.</p>
+<table>
+<thead>
+<tr>
+<th>Symptom</th>
+<th>Diagnosis</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>High-Pitched Grinding</strong></td>
+<td>Gear misalignment or debris in the <strong>MR105ZZ bearings</strong>.</td>
+<td>Clean and lubricate bearings; re-align motor pinion gear.</td>
+</tr>
+<tr>
+<td><strong>Steering Jitter</strong></td>
+<td>Mechanical binding in the steering linkage or servo horn slip.</td>
+<td>Ensure the <strong>DSSERVO DS3235</strong> is securely mounted with Loctite on the horn screw.</td>
+</tr>
+<tr>
+<td><strong>Reduced Traction</strong></td>
+<td>Differential wear or suspension bottoming out due to <strong>3S/4S LiPo</strong> weight.</td>
+<td>Adjust spring preload; check for oil leaks in the shocks.</td>
+</tr>
+<tr>
+<td><strong>Motor Overheating</strong></td>
+<td>The <strong>RS775</strong> is drawing too much current due to high gear ratios.</td>
+<td>Check for drivetrain friction; verify <strong>BTS7960</strong> current limits.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="3-pre-test-maintenance-checklist">📋 3. Pre-Test Maintenance Checklist</h2>
+<p>The mechanical team should perform this "Bolt-Check" before every autonomous run:</p>
+<ul>
+<li><strong>[ ] Fasteners:</strong> Check that all M3 screws in the <strong>3D printed decks</strong> are snug; PLA+ can "creep" under pressure.</li>
+<li><strong>[ ] Bearings:</strong> Spin the wheels manually to ensure the <strong>MR105ZZ bearings</strong> move freely without resistance.</li>
+<li><strong>[ ] Sensor Alignment:</strong> Verify the <strong>RPLIDAR A1</strong> is perfectly level; even a 2° tilt will cause "ground hits" in the laser scan.</li>
+<li><strong>[ ] Battery Security:</strong> Ensure the <strong>3S/4S LiPo</strong> is strapped down; a shifting battery will change the car's Center of Mass (CoM) and ruin RL training.</li>
+</ul>
+<hr />
+<h2 id="4-documentation-strategy">📈 4. Documentation Strategy</h2>
+<p>The mechanical lead should record every failure in the <code>docs/hardware/chassis_mechanical.md</code> page using this format:</p>
+<blockquote>
+<p><strong>Failure Log:</strong> [Date] - [Component] - [Cause] - [Resolution]</p>
+</blockquote>
 
 
 
@@ -794,7 +1012,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="January 25, 2026 01:04:53 UTC">January 25, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="January 25, 2026 01:36:45 UTC">January 25, 2026</span>
   </span>
 
     
@@ -868,10 +1086,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "content.code.copy", "content.code.annotate", "announce.dismiss", "content.code.copy", "navigation.tabs"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "content.code.copy", "content.code.annotate", "announce.dismiss", "content.code.copy", "navigation.tabs"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
