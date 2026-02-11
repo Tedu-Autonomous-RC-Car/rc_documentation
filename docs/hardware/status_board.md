@@ -1,10 +1,3 @@
-This looks like a solid setup for an autonomous RC car controller. You've got visual feedback (OLED and LEDs), user input (buttons/switches), and an audible alert (buzzer), all powered by what appears to be a Jetson Nano or similar SBC.
-
-Here is a structured documentation page for your project, covering the electronic parts, an itemized list, and a detailed connection map.
-
----
-
-## **Project Documentation: Autonomous RC Car Controller**
 
 This module serves as the primary interface for the autonomous RC car, providing real-time telemetry via an OLED display, status indicators via LEDs, and emergency/status alerts via a piezo buzzer.
 
