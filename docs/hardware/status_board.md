@@ -1,4 +1,4 @@
-
+# Status Board
 This module serves as the primary interface for the autonomous RC car, providing real-time telemetry via an OLED display, status indicators via LEDs, and emergency/status alerts via a piezo buzzer.
 
 ### **1. Electronic Parts List**
