@@ -12,28 +12,28 @@
         <meta name="author" content="Hajorda">
       
       
-        <link rel="canonical" href="https://tedu-autonomous-rc-car.github.io/rc_documentation/setup/">
+        <link rel="canonical" href="https://tedu-autonomous-rc-car.github.io/rc_documentation/hardware/status_board/">
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../sensors/">
       
       
-        <link rel="next" href="../hardware/bom/">
+        <link rel="next" href="../../jetson/gpio-config/">
       
       
         
       
       
-      <link rel="icon" href="../assets/images/favicon.ico">
+      <link rel="icon" href="../../assets/images/favicon.ico">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
-        <title>🚀 Getting Started - Autonomous Car Documentation</title>
+        <title>Status board - Autonomous Car Documentation</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
       
 
@@ -52,7 +52,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -60,17 +60,17 @@
     
   
 <meta property="og:type" content="website" />
-<meta property="og:title" content="🚀 Getting Started - Autonomous Car Documentation" />
+<meta property="og:title" content="Status board - Autonomous Car Documentation" />
 <meta property="og:description" content="Project at TED University focusing on autonomous RC racing using Reinforcement Learning (SAC/PPO), Jetson Orin Nano, and ROS2." />
-<meta property="og:image" content="https://tedu-autonomous-rc-car.github.io/rc_documentation/assets/images/social/setup.png" />
+<meta property="og:image" content="https://tedu-autonomous-rc-car.github.io/rc_documentation/assets/images/social/hardware/status_board.png" />
 <meta property="og:image:type" content="image/png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
-<meta property="og:url" content="https://tedu-autonomous-rc-car.github.io/rc_documentation/setup/" />
+<meta property="og:url" content="https://tedu-autonomous-rc-car.github.io/rc_documentation/hardware/status_board/" />
 <meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:title" content="🚀 Getting Started - Autonomous Car Documentation" />
+<meta property="twitter:title" content="Status board - Autonomous Car Documentation" />
 <meta property="twitter:description" content="Project at TED University focusing on autonomous RC racing using Reinforcement Learning (SAC/PPO), Jetson Orin Nano, and ROS2." />
-<meta property="twitter:image" content="https://tedu-autonomous-rc-car.github.io/rc_documentation/assets/images/social/setup.png" />
+<meta property="twitter:image" content="https://tedu-autonomous-rc-car.github.io/rc_documentation/assets/images/social/hardware/status_board.png" />
 </head>
   
   
@@ -83,7 +83,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#getting-started" class="md-skip">
+        <a href="#project-documentation-autonomous-rc-car-controller" class="md-skip">
           Skip to content
         </a>
       
@@ -97,9 +97,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Autonomous Car Documentation" class="md-header__button md-logo" aria-label="Autonomous Car Documentation" data-md-component="logo">
+    <a href="../.." title="Autonomous Car Documentation" class="md-header__button md-logo" aria-label="Autonomous Car Documentation" data-md-component="logo">
       
-  <img src="../assets/images/logo.png" alt="logo">
+  <img src="../../assets/images/logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              🚀 Getting Started
+              Status board
             
           </span>
         </div>
@@ -189,7 +189,7 @@
   
   
     <li class="md-tabs__item">
-      <a href=".." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
   
@@ -206,11 +206,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="./" class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../../setup/" class="md-tabs__link">
         
   
   
@@ -227,11 +225,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../hardware/bom/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../bom/" class="md-tabs__link">
           
   
   
@@ -251,7 +251,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../jetson/gpio-config/" class="md-tabs__link">
+        <a href="../../jetson/gpio-config/" class="md-tabs__link">
           
   
   
@@ -285,9 +285,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Autonomous Car Documentation" class="md-nav__button md-logo" aria-label="Autonomous Car Documentation" data-md-component="logo">
+    <a href="../.." title="Autonomous Car Documentation" class="md-nav__button md-logo" aria-label="Autonomous Car Documentation" data-md-component="logo">
       
-  <img src="../assets/images/logo.png" alt="logo">
+  <img src="../../assets/images/logo.png" alt="logo">
 
     </a>
     Autonomous Car Documentation
@@ -302,7 +302,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -326,37 +326,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    🚀 Getting Started
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../setup/" class="md-nav__link">
         
   
   
@@ -372,148 +345,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📋 Prerequisites
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#1-system-workspace-setup" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. System Workspace Setup
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-install-dependencies" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Install Dependencies
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="2. Install Dependencies">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#python-libraries" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Python Libraries
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ros2-packages" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ROS2 Packages
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-hardware-permissions-critical" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Hardware Permissions (Critical)
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="3. Hardware Permissions (Critical)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#identifying-the-arduinos" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Identifying the Arduinos
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-building-the-project" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Building the Project
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-documentation-development" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5. Documentation Development
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#troubleshooting-common-issues" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🛠 Troubleshooting Common Issues
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -522,28 +353,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   
@@ -561,7 +395,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -579,7 +413,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hardware/bom/" class="md-nav__link">
+      <a href="../bom/" class="md-nav__link">
         
   
   
@@ -607,7 +441,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hardware/chassis_mechanical/" class="md-nav__link">
+      <a href="../chassis_mechanical/" class="md-nav__link">
         
   
   
@@ -635,7 +469,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hardware/hardware/" class="md-nav__link">
+      <a href="../hardware/" class="md-nav__link">
         
   
   
@@ -663,7 +497,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hardware/power_management/" class="md-nav__link">
+      <a href="../power_management/" class="md-nav__link">
         
   
   
@@ -691,7 +525,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hardware/sensors/" class="md-nav__link">
+      <a href="../sensors/" class="md-nav__link">
         
   
   
@@ -716,10 +550,35 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../hardware/status_board/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Status board
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -735,6 +594,180 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#project-documentation-autonomous-rc-car-controller" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Project Documentation: Autonomous RC Car Controller
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Project Documentation: Autonomous RC Car Controller">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-electronic-parts-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Electronic Parts List
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-connection-map-wiring-schema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Connection Map (Wiring Schema)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Connection Map (Wiring Schema)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-power-ground-bus-lines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A. Power &amp; Ground (Bus Lines)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-display-i2c-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B. Display (I2C Interface)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-input-switches" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C. Input Switches
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d-status-indicators-leds-buzzer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        D. Status Indicators (LEDs &amp; Buzzer)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-implementation-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Implementation Notes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wiring-pinout-mapping" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔌 Wiring &amp; Pinout Mapping
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔌 Wiring &amp; Pinout Mapping">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#jetson-orin-nano-connection-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Jetson Orin Nano Connection Table
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#software-integration-ros-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💻 Software Integration (ROS 2)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💻 Software Integration (ROS 2)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#logic-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Logic Flow
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -808,7 +841,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../jetson/gpio-config/" class="md-nav__link">
+      <a href="../../jetson/gpio-config/" class="md-nav__link">
         
   
   
@@ -836,7 +869,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../jetson/jetson/" class="md-nav__link">
+      <a href="../../jetson/jetson/" class="md-nav__link">
         
   
   
@@ -864,7 +897,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../jetson/rplidar/" class="md-nav__link">
+      <a href="../../jetson/rplidar/" class="md-nav__link">
         
   
   
@@ -892,7 +925,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../jetson/teleop-node/" class="md-nav__link">
+      <a href="../../jetson/teleop-node/" class="md-nav__link">
         
   
   
@@ -937,8 +970,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -947,44 +978,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
+  <a href="#project-documentation-autonomous-rc-car-controller" class="md-nav__link">
     <span class="md-ellipsis">
       
-        📋 Prerequisites
+        Project Documentation: Autonomous RC Car Controller
       
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#1-system-workspace-setup" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. System Workspace Setup
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-install-dependencies" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Install Dependencies
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="2. Install Dependencies">
+    <nav class="md-nav" aria-label="Project Documentation: Autonomous RC Car Controller">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#python-libraries" class="md-nav__link">
+  <a href="#1-electronic-parts-list" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Python Libraries
+        1. Electronic Parts List
       
     </span>
   </a>
@@ -992,10 +1001,71 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#ros2-packages" class="md-nav__link">
+  <a href="#2-connection-map-wiring-schema" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ROS2 Packages
+        2. Connection Map (Wiring Schema)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Connection Map (Wiring Schema)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-power-ground-bus-lines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A. Power &amp; Ground (Bus Lines)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-display-i2c-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B. Display (I2C Interface)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-input-switches" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C. Input Switches
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d-status-indicators-leds-buzzer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        D. Status Indicators (LEDs &amp; Buzzer)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-implementation-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Implementation Notes
       
     </span>
   </a>
@@ -1008,22 +1078,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-hardware-permissions-critical" class="md-nav__link">
+  <a href="#wiring-pinout-mapping" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Hardware Permissions (Critical)
+        🔌 Wiring &amp; Pinout Mapping
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="3. Hardware Permissions (Critical)">
+    <nav class="md-nav" aria-label="🔌 Wiring &amp; Pinout Mapping">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#identifying-the-arduinos" class="md-nav__link">
+  <a href="#jetson-orin-nano-connection-table" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Identifying the Arduinos
+        Jetson Orin Nano Connection Table
       
     </span>
   </a>
@@ -1036,35 +1106,30 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-building-the-project" class="md-nav__link">
+  <a href="#software-integration-ros-2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Building the Project
+        💻 Software Integration (ROS 2)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💻 Software Integration (ROS 2)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#logic-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Logic Flow
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#5-documentation-development" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5. Documentation Development
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#troubleshooting-common-issues" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🛠 Troubleshooting Common Issues
-      
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1085,75 +1150,186 @@
 
 
 
-<h1 id="getting-started">🚀 Getting Started</h1>
-<p>This guide will help you set up the development environment for the TAVP Autonomous RC Car. Follow these steps to ensure your system is compatible with our ROS2 stack and hardware interface.</p>
-<h2 id="prerequisites">📋 Prerequisites</h2>
-<p>Before starting, ensure your machine (Host PC or Jetson) meets these requirements:</p>
-<ul>
-<li><strong>OS:</strong> Ubuntu 22.04 LTS (Jammy Jellyfish)</li>
-<li><strong>Middleware:</strong> ROS2 Humble Hawksbill</li>
-<li><strong>Python:</strong> 3.10+ (Note: Development on the documentation repo uses 3.12+)</li>
-</ul>
-<hr />
-<h2 id="1-system-workspace-setup">1. System Workspace Setup</h2>
-<p>First, create a dedicated ROS2 workspace for the project.</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># Create the workspace directory</span>
-mkdir<span class="w"> </span>-p<span class="w"> </span>~/tavp_ws/src
-<span class="nb">cd</span><span class="w"> </span>~/tavp_ws/src
+  <h1>Status board</h1>
 
-<span class="c1"># Clone the main documentation and sub-modules</span>
-git<span class="w"> </span>clone<span class="w"> </span>https://github.com/Tedu-Autonomous-RC-Car/rc_documentation.git
-</code></pre></div>
+<p>This looks like a solid setup for an autonomous RC car controller. You've got visual feedback (OLED and LEDs), user input (buttons/switches), and an audible alert (buzzer), all powered by what appears to be a Jetson Nano or similar SBC.</p>
+<p>Here is a structured documentation page for your project, covering the electronic parts, an itemized list, and a detailed connection map.</p>
 <hr />
-<h2 id="2-install-dependencies">2. Install Dependencies</h2>
-<p>We use a specific set of tools for AI inference and embedded communication.</p>
-<h3 id="python-libraries">Python Libraries</h3>
-<p>Install the core requirements for the documentation and the Jetson control logic:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/tavp_ws/src/rc_documentation
-pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
-</code></pre></div>
-<h3 id="ros2-packages">ROS2 Packages</h3>
-<p>Install the necessary ROS2 drivers for our sensors and serial communication:</p>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>update
-sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>ros-humble-joy<span class="w"> </span>ros-humble-teleop-twist-joy<span class="w"> </span><span class="se">\</span>
-<span class="w">                 </span>ros-humble-serial-driver<span class="w"> </span>ros-humble-v4l2-camera<span class="w"> </span><span class="se">\</span>
-<span class="w">                 </span>ros-humble-urg-node<span class="w"> </span><span class="c1"># If using Hokuyo LIDAR</span>
-</code></pre></div>
+<h2 id="project-documentation-autonomous-rc-car-controller"><strong>Project Documentation: Autonomous RC Car Controller</strong></h2>
+<p>This module serves as the primary interface for the autonomous RC car, providing real-time telemetry via an OLED display, status indicators via LEDs, and emergency/status alerts via a piezo buzzer.</p>
+<h3 id="1-electronic-parts-list"><strong>1. Electronic Parts List</strong></h3>
+<p>The following components are required for this build:</p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Component</th>
+<th>Quantity</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1</strong></td>
+<td><strong>Single Board Computer (SBC)</strong></td>
+<td>1</td>
+<td>Main controller (Jetson Nano / Raspberry Pi style).</td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td><strong>I2C OLED Display (SSD1306)</strong></td>
+<td>1</td>
+<td>Displays speed, battery level, and sensor data.</td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td><strong>Push Buttons / Toggle Switches</strong></td>
+<td>2</td>
+<td>Manual input (e.g., Mode Select, Start/Stop).</td>
+</tr>
+<tr>
+<td><strong>4</strong></td>
+<td><strong>Active/Passive Buzzer</strong></td>
+<td>1</td>
+<td>Audible error alerts and status pings.</td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td><strong>LEDs (Red &amp; Green)</strong></td>
+<td>2</td>
+<td>Visual status (Green = Ready, Red = Error/Braking).</td>
+</tr>
+<tr>
+<td><strong>6</strong></td>
+<td><strong>Resistors (220Ω - 330Ω)</strong></td>
+<td>2</td>
+<td>Current limiting for the LEDs.</td>
+</tr>
+<tr>
+<td><strong>7</strong></td>
+<td><strong>Breadboard &amp; Jumper Wires</strong></td>
+<td>1 set</td>
+<td>For prototyping connections.</td>
+</tr>
+</tbody>
+</table>
 <hr />
-<h2 id="3-hardware-permissions-critical">3. Hardware Permissions (Critical)</h2>
-<p>To allow the Jetson to communicate with the <strong>two Arduinos</strong> without <code>sudo</code> every time, you must add your user to the <code>dialout</code> group.</p>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>usermod<span class="w"> </span>-a<span class="w"> </span>-G<span class="w"> </span>dialout<span class="w"> </span><span class="nv">$USER</span>
-<span class="c1"># REBOOT your machine after running this!</span>
-</code></pre></div>
-<h3 id="identifying-the-arduinos">Identifying the Arduinos</h3>
-<p>Since we have two Arduinos (Steering and Drive), we use <strong>udev rules</strong> to fix their names. Create a new rules file:</p>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>nano<span class="w"> </span>/etc/udev/rules.d/99-arduino.rules
-</code></pre></div>
-<p>Add these lines (Update the <code>idProduct</code> based on your specific Arduino models):</p>
-<div class="highlight"><pre><span></span><code>SUBSYSTEM==&quot;tty&quot;, ATTRS{idVendor}==&quot;1a86&quot;, SYMLINK+=&quot;ttySteering&quot;
-SUBSYSTEM==&quot;tty&quot;, ATTRS{idVendor}==&quot;2341&quot;, SYMLINK+=&quot;ttyDrive&quot;
-</code></pre></div>
-<hr />
-<h2 id="4-building-the-project">4. Building the Project</h2>
-<p>Once the dependencies are installed, build the workspace using <code>colcon</code>.</p>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/tavp_ws
-colcon<span class="w"> </span>build<span class="w"> </span>--symlink-install
-<span class="nb">source</span><span class="w"> </span>install/setup.bash
-</code></pre></div>
-<hr />
-<h2 id="5-documentation-development">5. Documentation Development</h2>
-<p>If you are contributing to this documentation site, you can run a local preview server:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/tavp_ws/src/rc_documentation
-mkdocs<span class="w"> </span>serve
-</code></pre></div>
-<p>Your live preview will be available at <code>http://127.0.0.1:8000</code>.</p>
-<hr />
-<h2 id="troubleshooting-common-issues">🛠 Troubleshooting Common Issues</h2>
+<h3 id="2-connection-map-wiring-schema"><strong>2. Connection Map (Wiring Schema)</strong></h3>
+<h4 id="a-power-ground-bus-lines"><strong>A. Power &amp; Ground (Bus Lines)</strong></h4>
 <ul>
-<li><strong>Serial Port Busy:</strong> Ensure no other serial monitors (like Arduino IDE) are open.</li>
-<li><strong>ModuleNotFoundError:</strong> Ensure you have activated your Python virtual environment if you are using one.</li>
-<li><strong>Build Failure:</strong> Check that you have sourced your ROS2 installation: <code>source /opt/ros/humble/setup.bash</code>.</li>
+<li><strong>VCC (3.3V/5V):</strong> Connected from the SBC power rail to the breadboard positive rail (Red wire).</li>
+<li><strong>GND (Ground):</strong> Connected from the SBC GND pin to the breadboard negative rail (Brown/Black wire).</li>
 </ul>
+<h4 id="b-display-i2c-interface"><strong>B. Display (I2C Interface)</strong></h4>
+<p>The OLED screen uses the I2C protocol for communication.</p>
+<ul>
+<li><strong>VCC/GND:</strong> Connected to the power rails.</li>
+<li><strong>SCL (Clock):</strong> Yellow wire connected to the SBC I2C SCL pin.</li>
+<li><strong>SDA (Data):</strong> Green wire connected to the SBC I2C SDA pin.</li>
+</ul>
+<h4 id="c-input-switches"><strong>C. Input Switches</strong></h4>
+<p>The switches provide manual control to the car's logic.</p>
+<ul>
+<li><strong>Switch 1:</strong> Connected to a GPIO pin via the orange/brown wire.</li>
+<li><strong>Switch 2:</strong> Connected to a GPIO pin via the orange/brown wire.</li>
+<li><em>Note: These appear to be pulled to the GND rail when closed.</em></li>
+</ul>
+<h4 id="d-status-indicators-leds-buzzer"><strong>D. Status Indicators (LEDs &amp; Buzzer)</strong></h4>
+<ul>
+<li><strong>Green LED:</strong> Connected to a GPIO pin through a resistor; indicates "System Healthy" or "Autonomous Mode Active."</li>
+<li><strong>Red LED:</strong> Connected to a GPIO pin through a resistor; indicates "Obstacle Detected" or "System Error."</li>
+<li><strong>Buzzer:</strong> The red wire connects to a PWM-capable GPIO pin for generating alert tones.</li>
+</ul>
+<hr />
+<h3 id="3-implementation-notes"><strong>3. Implementation Notes</strong></h3>
+<ul>
+<li><strong>I2C Configuration:</strong> Ensure I2C is enabled in the SBC system settings (<code>raspi-config</code> or <code>jetson-io.py</code>) to communicate with the OLED.</li>
+<li><strong>Resistor Placement:</strong> Ensure resistors are in series with the LEDs to prevent burning out the GPIO pins of your controller.</li>
+<li><strong>Logic Levels:</strong> Verify if your SBC uses 3.3V or 5V logic. Most modern boards (Jetson/Pi) use <strong>3.3V</strong>; ensure your OLED and sensors are compatible.</li>
+</ul>
+<h2 id="wiring-pinout-mapping">🔌 Wiring &amp; Pinout Mapping</h2>
+<p>The following table maps the physical connections from the <strong>Jetson Orin Nano 40-pin Header</strong> to the breadboard components as seen in the schematic.</p>
+<p><img alt="HMI Controller Board Schematic" src="../../assets/images/controller_board.png" /></p>
+<h3 id="jetson-orin-nano-connection-table"><strong>Jetson Orin Nano Connection Table</strong></h3>
+<table>
+<thead>
+<tr>
+<th>Component Pin</th>
+<th>Wire Color (Diagram)</th>
+<th>Jetson GPIO / Pin</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>VCC (Rail)</strong></td>
+<td>Red</td>
+<td><strong>Pin 2 or 4 (5V)</strong></td>
+<td>System Power</td>
+</tr>
+<tr>
+<td><strong>GND (Rail)</strong></td>
+<td>Brown</td>
+<td><strong>Pin 6, 9, or 14</strong></td>
+<td>Common Ground</td>
+</tr>
+<tr>
+<td><strong>OLED SCL</strong></td>
+<td>Yellow</td>
+<td><strong>Pin 5 (I2C_2_SCL)</strong></td>
+<td>I2C Clock</td>
+</tr>
+<tr>
+<td><strong>OLED SDA</strong></td>
+<td>Yellow/Green</td>
+<td><strong>Pin 3 (I2C_2_SDA)</strong></td>
+<td>I2C Data</td>
+</tr>
+<tr>
+<td><strong>Buzzer (+)</strong></td>
+<td>Red</td>
+<td><strong>Pin 7 (PWM)</strong></td>
+<td>Alert Tones (PWM controlled)</td>
+</tr>
+<tr>
+<td><strong>LED (Green)</strong></td>
+<td>Brown</td>
+<td><strong>Pin 19 (GPIO)</strong></td>
+<td>Status Indicator</td>
+</tr>
+<tr>
+<td><strong>LED (Red)</strong></td>
+<td>Brown</td>
+<td><strong>Pin 21 (GPIO)</strong></td>
+<td>Error Indicator</td>
+</tr>
+<tr>
+<td><strong>Switch 1</strong></td>
+<td>Orange</td>
+<td><strong>Pin 11 (GPIO)</strong></td>
+<td>Mode Selection</td>
+</tr>
+<tr>
+<td><strong>Switch 2</strong></td>
+<td>Orange</td>
+<td><strong>Pin 13 (GPIO)</strong></td>
+<td>Start/Stop Command</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>[!IMPORTANT]
+It need to be configured these pins using the <code>jetson-io.py</code> tool to enable <strong>PWM</strong> on Pin 33 and <strong>I2C</strong> on Pins 3/5.</p>
+</blockquote>
+<hr />
+<h2 id="software-integration-ros-2">💻 Software Integration (ROS 2)</h2>
+<p>To interface with these components, the car runs a dedicated <code>hmi_node</code> within the ROS 2 workspace.</p>
+<h3 id="logic-flow"><strong>Logic Flow</strong></h3>
+<ol>
+<li><strong>OLED:</strong> Subscribes to <code>/odometry</code> and <code>/battery_status</code> topics.</li>
+<li><strong>LEDs:</strong> Controlled via the <code>/diagnostics</code> topic.</li>
+<li><strong>Buttons:</strong> Publish to <code>/cmd_mode</code> to switch between Reinforcement Learning (Autonomous) and Teleop (Manual) modes.</li>
+</ol>
 
 
 
@@ -1174,7 +1350,7 @@ mkdocs<span class="w"> </span>serve
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="January 25, 2026 05:57:54 UTC">January 25, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="February 11, 2026 14:23:05 UTC">February 11, 2026</span>
   </span>
 
     
@@ -1248,10 +1424,10 @@ mkdocs<span class="w"> </span>serve
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "content.code.copy", "content.code.annotate", "announce.dismiss", "content.code.copy", "navigation.tabs"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "content.code.copy", "content.code.annotate", "announce.dismiss", "content.code.copy", "navigation.tabs"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
