@@ -73,3 +73,5 @@ nav:
       - RPLIDAR Setup: jetson/rplidar.md
   - Software:
       - RC Car Model Training: software/model_training.md
+      - Model Performance Comparison: software/model_comparison.md
+      - 3D Construction: software/3d_construction.md
