@@ -1,5 +1,7 @@
 # Model Performance Comparison
 
-**Coming soon.**
+??? note "Select a category"
+    - [Object Detection](model_comparison_detection.md)
+    - [Segmentation](model_comparison_segmentation.md)
 
-This page will compare detection and segmentation model performance (metrics, speed, accuracy) for the RC Car Model Training pipeline.
+
