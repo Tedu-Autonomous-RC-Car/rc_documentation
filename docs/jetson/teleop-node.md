@@ -19,7 +19,7 @@ Before running the node, ensure the following requirements are met:
 Navigate to the workspace root directory (one level above `src`):
 
 ```bash
-cd ~/ros2_ws  # Adjust path to your workspace
+cd  /home/araba/Desktop/ros_ws/
 ```
 
 Build the workspace to ensure all changes are applied:
