@@ -29,17 +29,17 @@ extra:
 
 plugins:
   - search
-  - social
-  - multirepo:
-      # This helps prevent the 'Loop closed' error on some systems
-      cleanup: true 
-      repos:
-        - section: Controller
-          import_url: 'https://github.com/Tedu-Autonomous-RC-Car/teleopt_controller?branch=main'
-        # - section: Vision
-        #   import_url: 'https://github.com/Tedu-Autonomous-RC-Car/vision?branch=main'
-        - section: Jetson
-          import_url: 'https://github.com/Tedu-Autonomous-RC-Car/jetson?branch=main'
+  # - social
+  # - multirepo:
+  #     # This helps prevent the 'Loop closed' error on some systems
+  #     cleanup: true 
+  #     repos:
+  #       - section: Controller
+  #         import_url: 'https://github.com/Tedu-Autonomous-RC-Car/teleopt_controller?branch=main'
+  #       # - section: Vision
+  #       #   import_url: 'https://github.com/Tedu-Autonomous-RC-Car/vision?branch=main'
+  #       - section: Jetson
+  #         import_url: 'https://github.com/Tedu-Autonomous-RC-Car/jetson?branch=main'
   - git-revision-date-localized:
       type: date
 
@@ -56,3 +56,24 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+nav:
+  - Home: index.md
+  - Getting Started: setup.md
+  - Hardware:
+      - Overview: hardware/hardware.md
+      - Sensors: hardware/sensors.md
+      - Power Management: hardware/power_management.md
+      - Chassis & Mechanical: hardware/chassis_mechanical.md
+      - Status Board: hardware/status_board.md
+      - Bill of Materials: hardware/bom.md
+  - Jetson:
+      - Teleop Listener Node: jetson/teleop-node.md
+      - GPIO Configuration: jetson/gpio-config.md
+      - RPLIDAR Setup: jetson/rplidar.md
+  - Software:
+      - RC Car Model Training: software/model_training.md
+      - Model Performance Comparison: 
+          - Object Detection: software/model_comparison_detection.md
+          - Segmentation: software/model_comparison_segmentation.md
+      - 3D Construction: software/3d_construction.md
