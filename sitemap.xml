@@ -2,50 +2,70 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://tedu-autonomous-rc-car.github.io/rc_documentation/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-03-05</lastmod>
     </url>
     <url>
          <loc>https://tedu-autonomous-rc-car.github.io/rc_documentation/setup/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-03-05</lastmod>
     </url>
     <url>
          <loc>https://tedu-autonomous-rc-car.github.io/rc_documentation/hardware/bom/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-03-05</lastmod>
     </url>
     <url>
          <loc>https://tedu-autonomous-rc-car.github.io/rc_documentation/hardware/chassis_mechanical/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-03-05</lastmod>
     </url>
     <url>
          <loc>https://tedu-autonomous-rc-car.github.io/rc_documentation/hardware/hardware/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-03-05</lastmod>
     </url>
     <url>
          <loc>https://tedu-autonomous-rc-car.github.io/rc_documentation/hardware/power_management/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-03-05</lastmod>
     </url>
     <url>
          <loc>https://tedu-autonomous-rc-car.github.io/rc_documentation/hardware/sensors/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-03-05</lastmod>
     </url>
     <url>
          <loc>https://tedu-autonomous-rc-car.github.io/rc_documentation/hardware/status_board/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-03-05</lastmod>
     </url>
     <url>
          <loc>https://tedu-autonomous-rc-car.github.io/rc_documentation/jetson/gpio-config/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-03-05</lastmod>
     </url>
     <url>
          <loc>https://tedu-autonomous-rc-car.github.io/rc_documentation/jetson/jetson/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-03-05</lastmod>
     </url>
     <url>
          <loc>https://tedu-autonomous-rc-car.github.io/rc_documentation/jetson/rplidar/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-03-05</lastmod>
     </url>
     <url>
          <loc>https://tedu-autonomous-rc-car.github.io/rc_documentation/jetson/teleop-node/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-03-05</lastmod>
+    </url>
+    <url>
+         <loc>https://tedu-autonomous-rc-car.github.io/rc_documentation/software/3d_construction/</loc>
+         <lastmod>2026-03-05</lastmod>
+    </url>
+    <url>
+         <loc>https://tedu-autonomous-rc-car.github.io/rc_documentation/software/model_comparison/</loc>
+         <lastmod>2026-03-05</lastmod>
+    </url>
+    <url>
+         <loc>https://tedu-autonomous-rc-car.github.io/rc_documentation/software/model_comparison_detection/</loc>
+         <lastmod>2026-03-05</lastmod>
+    </url>
+    <url>
+         <loc>https://tedu-autonomous-rc-car.github.io/rc_documentation/software/model_comparison_segmentation/</loc>
+         <lastmod>2026-03-05</lastmod>
+    </url>
+    <url>
+         <loc>https://tedu-autonomous-rc-car.github.io/rc_documentation/software/model_training/</loc>
+         <lastmod>2026-03-05</lastmod>
     </url>
 </urlset>
