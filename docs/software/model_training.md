@@ -4,6 +4,12 @@ This page documents the **RC Car Model Training** application from the [RC-Car-M
 It is a full machine‑learning platform for training **object detection** and **semantic segmentation** models for the TAVP autonomous RC car.
 
 ---
+<iframe
+  src="https://huggingface.co/datasets/TargetU/RcCArDataset/embed/viewer/default/train"
+  frameborder="0"
+  width="100%"
+  height="560px"
+></iframe>
 
 ## 🚀 Features
 
